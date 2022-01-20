@@ -43,7 +43,7 @@ header
 }
 .nav_links li a:hover
 {
-	text-decoration: underline;
+	font-size: 18px;
 }	
 .navbar button
 {
