@@ -1,0 +1,91 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+ nav li a, button
+{
+	font-family: Aharoni;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+}
+header
+{
+	display: flex;
+	justify-content: flex-right;
+	align-items: center;
+}
+.logo
+{
+	width: 50px;
+	cursor: pointer;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.nav_links
+{
+	list-style: none;
+}
+.nav_links li
+{
+	display: inline-block;
+	margin-bottom: 13px;
+}
+.nav_links li a 
+{
+	text-shadow: 0 0 15px ;
+	transition: all .19s ease-in;
+	padding: 10px 15px;
+}
+.nav_links li a:hover
+{
+	text-decoration: underline;
+}	
+.navbar button
+{
+	padding: 9px 10px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	margin-bottom: 18px;
+
+}
+.navbar button:hover
+{
+	background-color: rgba(0,136,169,0.5);
+}
+.navbar
+{
+	height: 52px;
+	background-color: #E6E6E6;
+}
+header h1
+{
+	margin-right:600px; 
+	cursor: pointer;
+	font-family: Mochiy Pop P One;
+	color: black;
+	padding: 5px;
+	font-size: 21px;
+	padding-bottom: 25px;
+}
+.navbar .active
+{
+	background-color: #5882FA;
+}
+#theme-toggle
+{
+	padding: 5px 5px;
+	margin: 4px 10px;
+	margin-bottom: 20px;
+}
+#sun
+{
+	display: none;
+}
