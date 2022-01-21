@@ -43,7 +43,7 @@ header
 }
 .nav_links li a:hover
 {
-	font-size: 18px;
+	background-color: #424242;
 }	
 .navbar button
 {
@@ -54,6 +54,7 @@ header
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 	margin-bottom: 18px;
+	margin-left: 10px;
 
 }
 .navbar button:hover
@@ -85,11 +86,7 @@ header h1
 	margin: 4px 10px;
 	margin-bottom: 20px;
 }
-#moon
+body
 {
-	display: none;
-}
-#sun
-{
-	color: yellow;
+	background-color: #2E2E2E;
 }

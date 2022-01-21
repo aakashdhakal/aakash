@@ -1,3 +1,7 @@
+body
+{
+	background-color: #FAFAFA;
+}
 *
 {
 	box-sizing: border-box;
@@ -43,7 +47,7 @@ header
 }
 .nav_links li a:hover
 {
-	font-size: 18px;
+	background-color: #BDBDBD;
 }	
 .navbar button
 {
@@ -83,9 +87,5 @@ header h1
 {
 	padding: 5px 5px;
 	margin: 4px 10px;
-	margin-bottom: 20px;
-}
-#sun
-{
-	display: none;
+	margin-bottom: 20px;	
 }

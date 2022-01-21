@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const storedTheme = localStorage.getItem('theme');
     if(storedTheme){
         themeStylesheet.href = storedTheme;
-	}
+    }
     const themeToggle = document.getElementById('theme-toggle');
     themeToggle.addEventListener('click', () => {
         // if it's light -> go dark
@@ -25,4 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
         // save the preference to localStorage
         localStorage.setItem('theme',themeStylesheet.href)
     })
-})	
+})
+		
