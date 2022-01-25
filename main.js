@@ -7,18 +7,23 @@ window.smartsupp || (function (d) {
   c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 })(document);
 
-var btn = $('#button');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
   } else {
-    btn.removeClass('show');
+    scrollProgress.style.display = "none";
   }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-		
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#0A2A12 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
