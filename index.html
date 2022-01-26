@@ -19,13 +19,20 @@
             <h1>AAKASH DHAKAL</h1>
          </a>
          <nav>
+		 <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
             <ul class="nav_links">
                <li><a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
                <li><a href="#" class="button"><i class="fa fa-fw fa-photo-video"></i>Gallery</a></li>
                <li><a href="#" class="button"><i class="fa fa-fw fa-user-alt"></i>About Me</a></li>
+			   <li><a class""cta"><button id="contact">Contact</button></a></li>
             </ul>
+			
+			
          </nav>
-         <a class""cta"><button id="contact">Contact</button></a>
+         
       </header>
       <div class="about">
          <h1 class="text">Know more about me</h1>
@@ -50,9 +57,9 @@
 		 <figcaption><b>Darjeeling</b></figcaption>
 		 </figure>
 		 <div class="info">
-         <h1 style="color: white; margin-top: 60px;">Want to see more???</h1>
-         <p style="color: white; text-align:center; font-size: 35px; line-height: 30px; font-family: Dongle"> I am very interested in photography. Though I don't have professional camera I always capture photos from my smartphone wherever I go to a beautiful place. If you want to see my captured photos you can explore my gallery.</p>
-         <a><button id="about" style="margin-left: 630px;">Gallery</button></a>
+         <h2 style="color: white; margin-top: 60px;">Want to see more???</h2>
+         <p class="gallery-info"> I am very interested in photography. Though I don't have professional camera I always capture photos from my smartphone wherever I go to a beautiful place. If you want to see my captured photos you can explore my gallery.</p>
+         <a><button id="gallery-info">Gallery</button></a>
       </div>
 		 
       </div>
@@ -205,42 +212,65 @@
 	  
 	  
 	  
-	      <div id="progress">
+
+<footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>Social Medias</h2>
+          <div class="content">
+            <p>I am also on different social media platforms. If you want to contact me on any social medias then below are the links to my profile. You can also follow me on these platforms.</p>
+            <div class="social">
+              <a href="#"><span class="fab fa-facebook-f"style="background:#4267B2;"></span></a>
+              <a href="#"><span class="fab fa-twitter" style="background:#00acee;"></span></a>
+              <a href="#"><span class="fab fa-instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);"></span></a>
+              <a href="#"><span class="fab fa-youtube" style="background:#FF0000;"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Kageshwori Manahara-8, Kathmandu</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+977 9866401330</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">contact@aakashdhakal.com.np</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Leave me a message</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email*</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message*</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created by <a href="#">Aakash Dhakal</a> | </span>
+          <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+		      <div id="progress">
       <span id="progress-value"><i class="fas fa-arrow-up"></i></span>
     </div>
-      <footer>
-         <div class="footer-container">
-            <a href="index.html"><img class="footer-logo" src="logo.png" alt="logo"></a>
-            <h2>Aakash Dhakal</h2>
-            <div class="footer-nav">
-               <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#" class="button">Gallery</a></li>
-                  <li><a href="#" class="button">About Me</a></li>
-               </ul>
-            </div>
-            <div class="footer-contact">
-               <ul>
-                  <li><i class="fas fa-envelope"></i>&nbspcontact@aakashdhakal.com.np&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
-                  <li><i class="fas fa-phone-alt"></i>&nbsp+977 9866401330&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
-                  <li><i class="fas fa-map-marker-alt"></i>&nbspKageshwori Manahara-8, Kathmandu</li>
-               </ul>
-            </div>
-            <div class="social-media">
-               <div class="social-links">
-                  <ul>
-                  <li><a class""cta"><button id="facebook"><i class="fab fa-facebook-f"></i></button></a></li>
-                  <li><a class""cta"><button id="instagram"><i class="fab fa-instagram"></i></button></a></li>
-                  <li><a class""cta"><button id="twitter"><i class="fab fa-twitter"></i></button></a></li>
-                  <li><a class""cta"><button id="telegram"><i class="fab fa-telegram-plane"></i></button></a></li>
-                  <li><a class""cta"><button id="viber"><i class="fab fa-viber"></i></button></a></li>
-                  <li><a class""cta"><button id="whatsapp"><i class="fab fa-whatsapp"></i></button></a></li>
-                  <li><a class""cta"><button id="discord"><i class="fab fa-discord"></i></button></a></li>
-               </div>
-            </div>
-            <hr>
-			<h5>Copyright &copy 2022 Aakash Dhakal. All Rights Reserved</h5>
-         </div>
-      </footer>
-   </body>
 </html>
