@@ -29,3 +29,18 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('nav-mode_switch').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+
+    localStorage.setItem(
+      'theme',
+      document.body.classList.contains('dark') ? 'dark' : 'light'
+    );
+  });
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+});
