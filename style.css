@@ -5,7 +5,6 @@
 	--bg-color: #F2F2F2;
 	--heading-color: #292922;
 	--footer: #E6E6E6;
-	--opposite-color: black;
 }
 
 .dark {
@@ -15,7 +14,6 @@
 	--bg-color: #0E0E0E;
 	--heading-color: #818cab;
 	--footer: #1C1C1C;
-	--opposite-color: white;
 }
 
 html {
@@ -166,7 +164,6 @@ header .active {
 	text-align: center;
 	cursor: pointer;
 	color: var(--font-color);
-	;
 	font-family: Staatliches;
 	text-decoration: underline;
 	margin-bottom: 10px;
@@ -238,13 +235,13 @@ header .active {
 
 #gallery-info {
 	padding: 10px;
-	background-color: #FE2E2E;
+	background-color: #610B0B;
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
 	margin: 20px;
-	margin-left: 600px;
 	font-size: 20px;
+	color: white;
 }
 
 #gallery-info:hover {
@@ -254,7 +251,7 @@ header .active {
 #nav-mode_switch {
 	background: rgba(0, 136, 169, 1);
 	outline: none;
-	color: var(--color-secondary);
+	color: #2E2E2E;
 	border: none;
 	cursor: pointer;
 	margin: 10px;
@@ -262,7 +259,7 @@ header .active {
 	margin-right: 40px;
 	margin-top: 2px;
 	padding: 5px;
-	border-radius: 50%;
+	border-radius: 100px;
 	text-align: center;
 }
 
@@ -272,16 +269,55 @@ body.dark #nav-mode_switch .fa-moon {
 
 body.dark #nav-mode_switch .fa-sun {
 	display: block;
-	color: white;
+	color: #DBA901;
 }
 
 #nav-mode_switch .fa-sun {
 	display: none;
 }
+.projects h1
+{
+	font-size: 90px;
+	text-align: center;
+	cursor: pointer;
+	color: var(--font-color);
+	font-family: Staatliches;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+ .projects .project-container
+ {
+	width: 98.5%;
+	padding: 10px;
+	border: 5px solid gray;
+	margin: 10px;
+	height: 500px;
+ }
+ .projects
+ {
+	margin-top: 70px;
+ }
+ .loader {
+  border: 16px solid var(--font-color);
+  border-top: 16px solid #01A9DB;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-top: 150px;
+}
 
- 
- 
- 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.project-container h2
+{
+	font-size: 30px;
+	margin: 20px;
+	font-family: Changa;
+	color: var(--font-color);
+}
  
  
  
@@ -760,7 +796,7 @@ footer {
 	top: -10px;
 	height: 2px;
 	width: 100%;
-	background: var(--opposite-color);
+	background: var(--font-color);
 }
 
 .box .content:after {
