@@ -252,7 +252,8 @@
       <div class="right box">
          <h2>Leave me a message</h2>
          <div class="content">
-            <form action="POST" data-netlify-recaptcha="true" name="contact" onSubmit="submit">
+            <form action="POST" data-netlify="true" name="contact" onSubmit="submit" data-netlify-honeypot="bot-field">
+			<input name="bot-field" style="display: none;">
                <div class="email">
                   <div class="text">Email*</div>
                   <input type="email" required name="Email">
@@ -261,7 +262,6 @@
                   <div class="text">Message*</div>
                   <textarea rows="2" cols="25" required name="Message"></textarea>
                </div>
-		    <center><div data-netlify-recaptcha="true"></div></center>
                <div class="btn">
                   <button type="submit">Send</button>
                </div>
