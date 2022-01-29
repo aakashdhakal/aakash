@@ -8,28 +8,33 @@
       <link rel="icon" href="favicon.ico">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Mochiy Pop P One|Lobster|Staatliches|Dongle|Changa">
+      <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Mochiy Pop P One|Lobster|Staatliches|Dongle|Changa|Oxanium|Revalia">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://kit.fontawesome.com/6b58028b5c.js" crossorigin="anonymous"></script>
    </head>
    <body>
       <header>
-         <a href="index.html"><img class="logo" src="logo.png" alt="logo"></a>
+
+         <nav>
+		 <div class="logo-container">
+		          <a href="index.html"><img class="logo" src="logo.png" alt="logo"></a>
          <a href="index.html" style="text-decoration: none; padding-right: 0px;">
             <h1>AAKASH DHAKAL</h1>
          </a>
-         <nav>
+		 </div>
+		  <input type="checkbox" id="click">
+		 <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
             <ul class="nav_links">
                <li><a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
                <li><a href="#" class="button"><i class="fa fa-fw fa-photo-video"></i>Gallery</a></li>
                <li><a href="#" class="button"><i class="fa fa-fw fa-user-alt"></i>About Me</a></li>
-            </ul>
-         </nav>
-         <a class""cta"><button id="contact">Contact</button></a>
-         <button type="button" id="nav-mode_switch">
+			            <li><a class""cta"><button id="contact">Contact</button></a></li>
+						         <li><button type="button" id="nav-mode_switch">
          <i class="fas fa-sun"></i>
          <i class="fas fa-moon"></i>
-         </button>
+         </button></li>
+            </ul>
+         </nav>
       </header>
       <div class="about">
          <h1 class="text">Know more about me</h1>
@@ -56,227 +61,80 @@
          <div class="info">
             <h2 style="color: white; margin-top: 60px;">Want to see more???</h2>
             <p class="gallery-info"> I am very interested in photography. Though I don't have professional camera I always capture photos from my smartphone wherever I go to a beautiful place. If you want to see my captured photos you can explore my gallery.</p>
-           <center><a><button id="gallery-info">Gallery</button></a></center>
+            <center><a><button id="gallery-info">Gallery</button></a></center>
          </div>
       </div>
-	  <div class="projects">
-	  <h1>Projects</h1>
-	  <div class="project-container">
-	  <center><div class="loader"></div><center>
-	  <h2>I am currently studying. So, projects are under development.</h2>
-	  </div>
-	  </div>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-
-<footer>
-   <div class="main-content">
-      <div class="left box">
-         <h2>Social Medias</h2>
-         <div class="content">
-            <p>I am also on different social media platforms. If you want to contact me on any social medias then below are the links to my profile. You can also follow me on these platforms.</p>
-            <div class="social">
-               <a href="https://www.facebook.com/adentertainmnt" target="_blank"><span class="fab fa-facebook-f"style="background:#4267B2;"></span></a>
-               <a href="https://twitter.com/aakash_dhakal12" target="_blank"><span class="fab fa-twitter" style="background:#00acee;"></span></a>
-               <a href="https://www.instagram.com/aakash_dhakal12/" target="_blank"><span class="fab fa-instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);"></span></a>
-               <a href="https://discord.gg/dfBkqkQ" target="_blank"><span class="fab fa-discord" style="background:#7289DA;"></span></a>
-               <a href="#" target="_blank"><span class="fab fa-youtube" style="background:#FF0000;"></span></a>
-               <a href="https://t.me/aakashdhakal" target="_blank"><span class="fab fa-telegram-plane" style="background: #229ED9;"></span></a>
-            </div>
+      <div class="projects">
+         <center><h1>Projects</h1></center>
+         <div class="project-container">
+            <center>
+            <div class="loader"></div>
+            <center>
+            <h2>I am currently studying. So, projects are under development.</h2>
          </div>
       </div>
-      <div class="center box">
-         <h2>Address</h2>
-         <div class="content">
-            <div class="place">
-               <span class="fas fa-map-marker-alt"></span>
-               <span class="text">Kageshwori Manahara-8, Kathmandu</span>
-            </div>
-            <div class="phone">
-               <span class="fas fa-phone-alt"></span>
-               <span class="text">+977 9866401330</span>
-            </div>
-            <div class="email">
-               <span class="fas fa-envelope"></span>
-               <span class="text">contact@aakashdhakal.com.np</span>
-            </div>
-         </div>
-      </div>
-      <div class="right box">
-         <h2>Leave me a message</h2>
-         <div class="content">
-            <form action="POST" data-netlify="true" name="contact" onSubmit="submit" data-netlify-honeypot="bot-field">
-			<input name="bot-field" style="display: none;">
-               <div class="email">
-                  <div class="text">Email*</div>
-                  <input type="email" required name="Email">
+      <footer>
+         <div class="main-content">
+            <div class="left box">
+               <h2>Social Medias</h2>
+               <div class="content">
+                  <p>I am also on different social media platforms. If you want to contact me on any social medias then below are the links to my profile. You can also follow me on these platforms.</p>
+                  <div class="social">
+                     <a href="https://www.facebook.com/adentertainmnt" target="_blank"><span class="fab fa-facebook-f"style="background:#4267B2;"></span></a>
+                     <a href="https://twitter.com/aakash_dhakal12" target="_blank"><span class="fab fa-twitter" style="background:#00acee;"></span></a>
+                     <a href="https://www.instagram.com/aakash_dhakal12/" target="_blank"><span class="fab fa-instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);"></span></a>
+                     <a href="https://discord.gg/dfBkqkQ" target="_blank"><span class="fab fa-discord" style="background:#7289DA;"></span></a>
+                     <a href="#" target="_blank"><span class="fab fa-youtube" style="background:#FF0000;"></span></a>
+                     <a href="https://t.me/aakashdhakal" target="_blank"><span class="fab fa-telegram-plane" style="background: #229ED9;"></span></a>
+					 <a href="https://www.linkedin.com/in/aakash-dhakal-2454051ab/" target="_blank"><span class="fab fa-linkedin-in" style="background: #0077b5;"></span></a>
+                  </div>
                </div>
-               <div class="msg">
-                  <div class="text">Message*</div>
-                  <textarea rows="2" cols="25" required name="Message"></textarea>
+            </div>
+            <div class="center box">
+               <h2>Address</h2>
+               <div class="content">
+                  <div class="place">
+                     <span class="fas fa-map-marker-alt"></span>
+                     <span class="text">Kathmandu, Nepal</span>
+                  </div>
+                  <div class="phone">
+                     <span class="fas fa-phone-alt"></span>
+                     <span class="text">+977 9866401330</span>
+                  </div>
+                  <div class="email">
+                     <span class="fas fa-envelope"></span>
+                     <span class="text">contact@aakashdhakal.com.np</span>
+                  </div>
                </div>
-               <div class="btn">
-                  <button type="submit">Send</button>
+            </div>
+            <div class="right box">
+               <h2>Leave me a message</h2>
+               <div class="content">
+                  <form method="POST" data-netlify="true" name="contact" onSubmit="submit" data-netlify-honeypot="bot-field" action="/success/">
+                     <input name="bot-field" style="display: none;">
+                     <div class="email">
+                        <div class="text">Email*</div>
+                        <input type="email" required name="Email">
+                     </div>
+                     <div class="msg">
+                        <div class="text">Message*</div>
+                        <textarea rows="2" cols="25" required name="Message"></textarea>
+                     </div>
+                     <div class="btn">
+                        <button type="submit">Send</button>
+                     </div>
+                  </form>
                </div>
-            </form>
+            </div>
          </div>
+         <div class="bottom">
+            <center>
+               <span class="credit">Created by <a href="#">Aakash Dhakal</a> | </span>
+               <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+            </center>
+         </div>
+      </footer>
+      <div id="progress">
+         <span id="progress-value"><i class="fas fa-arrow-up"></i></span>
       </div>
-   </div>
-   <div class="bottom">
-      <center>
-         <span class="credit">Created by <a href="#">Aakash Dhakal</a> | </span>
-         <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
-      </center>
-   </div>
-</footer>
-<div id="progress">
-   <span id="progress-value"><i class="fas fa-arrow-up"></i></span>
-</div>
 </html>

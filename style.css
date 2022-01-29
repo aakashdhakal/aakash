@@ -29,74 +29,76 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-
-nav li a,
-button {
-	font-family: Aharoni;
-	font-weight: 500;
-	font-size: 16px;
-	text-decoration: none;
-	color: black;
-	margin-right: 10px;
-	flex: 1;
-	text-align: right;
-}
-
-header {
+nav
+{
+	height: 50px;
+	background: var(--secondary-color);
 	display: flex;
-	justify-content: flex-right;
 	align-items: center;
-	height: 52px;
-	background-color: var(--secondary-color);
+	justify-content: space-between;
 }
-
+nav ul
+{
+	display: flex;
+	list-style: none;
+}
+nav ul li a
+{
+	text-decoration: none;
+	color: var(--font-color);
+	padding: 8px 10px;
+	font-size: 16px;
+	font-family: Oxanium;
+	font-weight: 500;
+	border-radius: 5px;
+}
+nav ul li .button:hover
+{
+	background-color: var(--heading-color);
+	color: var(--primary-color);
+}
+nav ul li
+{
+	margin: 0px 5px;
+}
+nav .menu-btn i 
+{
+	font-size: 22px;
+	cursor: pointer;
+	display: none;
+	color: var(--font-color);
+}
+nav .logo-container
+{
+	display: flex;
+	align-items: center;
+}
+#click
+{
+	display: none;
+}
 .logo {
 	width: 50px;
 	cursor: pointer;
-	margin-right: auto;
 	margin-left: 10px;
 	margin-top: 11px;
 }
-
-.nav_links {
-	list-style: none;
-	margin-top: 10px;
-	margin-left: 480px;
-}
-
-.nav_links li {
-	display: inline-block;
-	margin-bottom: 13px;
-}
-
-.nav_links li a {
-	text-shadow: 0 0 15px;
-	transition: all .19s ease-in;
-	padding: 10px 15px;
-	color: var(--font-color);
-}
-
-.nav_links li a:hover {
-	background-color: #BDBDBD;
-}
-
 #contact {
-	padding: 9px 10px;
+	padding: 5px 6px;
 	background-color: rgba(0, 136, 169, 1);
 	border: none;
 	border-radius: 50px;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
-	margin-bottom: 8px;
-	margin-left: 5px;
 	color: var(--font-color);
+	margin-top: -5px;
+	font-family: Oxanium;
+	font-size: 15px;
 }
 
 #contact:hover {
-	background-color: none;
 	opacity: 0.8;
 }
-
 header h1 {
 	cursor: pointer;
 	font-family: Mochiy Pop P One;
@@ -105,7 +107,6 @@ header h1 {
 	font-size: 25px;
 	padding-bottom: 25px;
 	margin-top: 10px;
-	display: inline-block;
 }
 
 header .active {
@@ -147,12 +148,15 @@ header .active {
 #about {
 	margin-left: 450px;
 	border-radius: 50px;
-	padding: 10px;
+	padding: 7px;
 	cursor: pointer;
 	margin-top: 20px;
 	transition: all 0.3s ease 0s;
 	background-color: rgba(0, 136, 169, 1);
 	border: none;
+	color: var(--font-color);
+	font-family: Revalia;
+	font-size: 17px;
 }
 
 #about:hover {
@@ -230,7 +234,7 @@ header .active {
 	text-align: center;
 	font-size: 40px;
 	line-height: 30px;
-	font-family: Dongle
+	font-family: Dongle;
 }
 
 #gallery-info {
@@ -240,6 +244,7 @@ header .active {
 	border-radius: 50px;
 	cursor: pointer;
 	margin: 20px;
+	font-family: Revalia;
 	font-size: 20px;
 	color: white;
 }
@@ -254,13 +259,12 @@ header .active {
 	color: #2E2E2E;
 	border: none;
 	cursor: pointer;
-	margin: 10px;
 	font-size: 17px;
-	margin-right: 40px;
-	margin-top: 2px;
-	padding: 5px;
+	padding: 4px 5px;
 	border-radius: 100px;
 	text-align: center;
+	margin-right: 7px;
+	margin-bottom: 5px;
 }
 
 body.dark #nav-mode_switch .fa-moon {
@@ -275,8 +279,8 @@ body.dark #nav-mode_switch .fa-sun {
 #nav-mode_switch .fa-sun {
 	display: none;
 }
-.projects h1
-{
+
+.projects h1 {
 	font-size: 90px;
 	text-align: center;
 	cursor: pointer;
@@ -285,454 +289,174 @@ body.dark #nav-mode_switch .fa-sun {
 	text-decoration: underline;
 	margin-bottom: 10px;
 }
- .projects .project-container
- {
+
+.projects .project-container {
 	width: 98.5%;
 	padding: 10px;
 	border: 5px solid gray;
 	margin: 10px;
 	height: 500px;
- }
- .projects
- {
+}
+
+.projects {
 	margin-top: 70px;
- }
- .loader {
-  border: 16px solid var(--font-color);
-  border-top: 16px solid #01A9DB;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-  margin-top: 150px;
+}
+
+.loader {
+	border: 16px solid var(--font-color);
+	border-top: 16px solid #01A9DB;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+	margin-top: 150px;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
-.project-container h2
-{
+
+.project-container h2 {
 	font-size: 30px;
 	margin: 20px;
 	font-family: Changa;
 	color: var(--font-color);
 }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-@media only screen and (max-width: 900px) {
+
+header .icon {
+	display: none;
+}
+
+@media only screen and (max-width: 940px) {
 	footer {
 		position: relative;
 		bottom: 0px;
 	}
+
 	.main-content {
 		flex-wrap: wrap;
 		flex-direction: column;
-		background:
-	}
+		background: }
 	.main-content .box {
 		margin: 5px 0;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	header h1 {
+		font-size: 20px;
+	}
+	nav ul
+	{
+		position: fixed;
+		top: 45px;
+		left:0;
+		background: var(--secondary-color);
+		height: 100vh;
+		width: 100%;
+		text-align: center;
+		display: block;
+		left: -100%;
+		transition: all 0.4s ease;
+	}
+	nav ul li
+	{
+		margin-top: 50px;
+	}
+	nav ul li a
+	{
+		font-size: 20px;
+	}
+	nav .menu-btn i
+	{
+		display: block;
+		margin-right: 10px;
+	}
+	#click:checked ~ ul
+{
+	left: 0%;
+}
+	#click:checked ~ .menu-btn i:before
+	{
+		content: "\f00d";
+	}
+	.gallery img
+	{
+		width: 250px;
+	}
+	.gallery .glry h1 
+	{
+		font-size: 70px;
+	}
+	.about .text 
+	{
+		font-size: 37px;
+		text-align: center;
+		margin-left: -0px;
+	}
+	.about img 
+	{
+		display: none;
+	}
+	.about .des
+	{
+		margin-left: 8px;
+		font-size: 28px;
+	}
+	#about 
+	{
+		margin-left: 30%;
+		padding: 5px;
+		font-size: 15px;
+	}
+	.gallery .info h2
+	{
+		font-size: 40px;
+	}
+	.gallery .info .gallery-info
+	{
+		font-size: 30px;
+	}
+	#gallery-info
+	{
+		padding: 5px;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+	.projects
+	{
+		width: 95.5%;
+		text-align: center;
+	}
+	.projects h1 
+	{
+		font-size: 65px;
+		text-align: center;
+		margin-left: 5%;
+	}
+	.projects .loader
+	{
+		margin-top: 10px;
+	}
+	footer .social a span
+	{
+		margin-top: 10px;
+	}
+	#contact
+	{
+		font-size: 20px;
+	}
+	#nav-mode-switch
+	{
+		font-size: 20px;
 	}
 }
 
@@ -810,7 +534,7 @@ footer {
 
 .left .content p {
 	text-align: justify;
-	color: var(--font-color)
+	color: var(--font-color);
 }
 
 .left .content .social {
