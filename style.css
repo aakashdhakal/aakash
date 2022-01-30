@@ -11,7 +11,7 @@
 	--primary-color: #000000;
 	--secondary-color: #101010;
 	--font-color: white;
-	--bg-color: #0E0E0E;
+	--bg-color: #0C090A;
 	--heading-color: #818cab;
 	--footer: #1C1C1C;
 }
@@ -331,6 +331,39 @@ body.dark #nav-mode_switch .fa-sun {
 header .icon {
 	display: none;
 }
+.success h1
+{
+	font-size: 70px;
+	color: black;
+	font-family: Staatliches;
+}
+.success
+{
+	width: 900px;
+	height: 50%;
+	border: 5px solid var(--primary-color);
+	background: #D8D8D8;
+	margin: auto;
+	display: flex; align-items: center; justify-content: center
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 940px) {
 	footer {
