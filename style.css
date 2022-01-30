@@ -518,6 +518,15 @@ header .icon {
 	{
 		font-size: 20px;
 	}
+	.success
+	{
+		width: 96.5%;
+	}
+	#return
+	{
+		font-size: 12px;
+		margin-right: 20%;
+	}
 }
 
 #progress {
