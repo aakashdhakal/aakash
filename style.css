@@ -334,24 +334,49 @@ header .icon {
 .success h1
 {
 	font-size: 70px;
-	color: black;
+	color: var(--font-color);
 	font-family: Staatliches;
 }
 .success
 {
 	width: 900px;
 	height: 50%;
-	border: 5px solid var(--primary-color);
-	background: #D8D8D8;
+	border: 5px solid var(--font-color);
 	margin: auto;
-	display: flex; align-items: center; justify-content: center
-	
+	margin-top: 10%;
 }
-
-
-
-
-
+.success h2
+{
+	color: var(--font-color);
+	text-align: center;
+	font-size: 30px;
+}
+.success h3
+{
+	color: var(--font-color);
+	text-align: center;
+	font-size: 20px;
+}
+#return
+{
+	border: none;
+	padding: 5px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	font-family: Revalia;
+	font-size: 20px;
+	background-color: #2E64FE;
+	color: var(--font-color);
+	cursor: pointer;
+	margin-left: 30%;
+}
+#return:hover
+{
+	opacity: 0.9;
+}
 
 
 
