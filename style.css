@@ -465,7 +465,7 @@ header .icon {
 #progress {
 	position: fixed;
 	bottom: 100px;
-	right: 35px;
+	right: 30px;
 	height: 50px;
 	width: 50px;
 	display: none;
