@@ -371,7 +371,7 @@ header .icon {
 	background-color: #2E64FE;
 	color: var(--font-color);
 	cursor: pointer;
-	margin-left: 30%;
+	margin-left: 40%;
 }
 #return:hover
 {
@@ -474,7 +474,7 @@ header .icon {
 	#about 
 	{
 		margin-left: 30%;
-		padding: 5px;
+		padding: 7px 7px;
 		font-size: 15px;
 	}
 	.gallery .info h2
@@ -487,7 +487,7 @@ header .icon {
 	}
 	#gallery-info
 	{
-		padding: 5px;
+		padding: 7px 7px;
 		font-size: 15px;
 		margin-top: 10px;
 	}
@@ -524,12 +524,17 @@ header .icon {
 	}
 	#return
 	{
-		font-size: 12px;
-		margin-right: 20%;
+		font-size: 15px;
+		padding: 5px 10px;
+		margin-left: 30%;
 	}
 		.success h1, h2
 		{
-			margin-top: 10px;	
+			margin-bottom: 10px;	
+		}
+		.gallery .info
+		{
+			height: 80vh;
 		}
 }
 
