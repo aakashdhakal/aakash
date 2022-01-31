@@ -52,3 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.contact.submit();
             document.contact.reset();
             }
+
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-217180448-1');
